@@ -35,8 +35,8 @@ class EditableTimer extends React.Component {
       );
     } else {
       return (
-        <Timer id={this.props.id} title={this.props.title} project={this.props.project} elapsed={this.props.elapsed}
-        runningSince={this.props.runningSince} editForm={this.openForm} deleteTimer={this.props.deleteTimer} />
+        <Timer id={this.props.id} title={this.props.title} project={this.props.project} elapsed={this.props.elapsed} runningSince={this.props.runningSince}
+        editForm={this.openForm} deleteTimer={this.props.deleteTimer} onStopClick={this.props.onStopClick} onStartClick={this.props.onStartClick} />
       );
     }
   }
