@@ -4,8 +4,8 @@
   "description": "A app containing list of timers to solidify concepts of React",
   "main": "index.js",
   "scripts": {
-    "create": "webpack",
-    "start": "webpack-dev-server --open"
+    "compile-react": "webpack",
+    "start": "babel-node server.js"
   },
   "repository": {
     "type": "git",
@@ -30,18 +30,24 @@
   },
   "homepage": "https://github.com/SagarRouth/timer-list#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "semantic-ui": "^2.2.11",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.17.2",
     "css-loader": "^0.28.4",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
